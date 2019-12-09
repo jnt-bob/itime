@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddActivity">
+    tools:context=".AddActivity"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="220dp"
+        android:background="@color/Allcolor"
         >
         <ImageView
             android:layout_width="50dp"
@@ -27,5 +29,57 @@
             android:layout_marginTop="10dp"
             android:src="@drawable/finish">
         </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="100dp"
+            android:text="标题"
+            android:textColor="#FFFFFF"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="100dp"
+            android:text="备注"
+            android:textColor="#FFFFFF"
+            ></TextView>
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="生日，纪念日，节日，考试...."
+            android:textColorHint="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            ></EditText>
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="想说的话，目标，格言...."
+            android:textColorHint="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="140dp"
+            ></EditText>
     </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view_goods_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <ListView
+        android:id="@+id/list_view_goods_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
